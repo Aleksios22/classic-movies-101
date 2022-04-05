@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Tailpine</title>
+
+        <!--Tailwindcss-->
+        <link rel="stylesheet" href="public/styles.css">
+    </head>
+    <body class="bg-gray-100 text-6xl underline">
+        <h1>Tailpine</h1>
+        <div x-data="{ open: false }">
+            <button @click="open = true">Expand</button>
+            <span x-show="open">
+              Content...
+            </span>
+        </div>
+
+        <!--Alpinejs-->
+        <script src="public/script.js"></script>
+    </body>
+</html>
